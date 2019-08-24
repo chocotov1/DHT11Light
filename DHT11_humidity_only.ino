@@ -47,7 +47,7 @@ bool read_dht11_humidity(){
       // 0: 26-28 us
       // 1: 70 us
 
-      // measuered short pulses are occasionally as low as 14, scope revealed the pulses were in reality 22 us
+      // measured short pulses are occasionally as low as 14, scope revealed the pulses were in reality 22 us
       
       // read_high_pulse_dht11() returns 0 if the min / max condition was not met
       byte bit_pulse = read_high_pulse_dht11(10, 100);
