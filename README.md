@@ -1,8 +1,8 @@
 # ~~DHT11 humidity only~~ DHT11Light
 
-I wanted to be able to read the humidity from a DHT11 sensor on a ATtiny85 based project. When trying out the most common Arduino DHT11 libraries, i noticed the demo sketch alone already consumed in excess of 8 kB.
+I wanted to be able to read the humidity from a DHT11 sensor on a ATtiny85 based project. When trying out the most common Arduino DHT11 libraries, I noticed the demo sketch alone already consumed in excess of 8 kB.
 
-After i noticed there were false readings in the first version, i discoved some of the DHT11 pulses were not being registered by pulseIn(). Now i've modifified the code:
+After i noticed there were false readings in the first version, I discovered some of the DHT11 pulses were not being registered by pulseIn(). Now i've modifified the code:
 - Check pulse length in loop cycles instead of pulseIn()
 - Added temperature
 - Added checksum
@@ -14,6 +14,7 @@ Preview sketch size with [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore)
 Sketch uses 986 bytes (12%) of program storage space. Maximum is 8192 bytes.
 Global variables use 14 bytes (2%) of dynamic memory, leaving 498 bytes for local variables. Maximum is 512 bytes.
 ```
+
 ~~## Caveat: No checksum check
 The DHT11 output reponse contains a checksum. This sketch doesn't check the checksum.
 
