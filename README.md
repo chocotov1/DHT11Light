@@ -2,7 +2,7 @@
 
 I wanted to be able to read the humidity from a DHT11 sensor on a ATtiny85 based project. When trying out the most common Arduino DHT11 libraries, I noticed the demo sketch alone already consumed in excess of 8 kB.
 
-After i noticed there were false readings in the first version, I discovered some of the DHT11 pulses were not being registered by pulseIn(). Now i've modifified the code:
+After I noticed there were false readings in the first version, I discovered some of the DHT11 pulses were not being registered by pulseIn(). Now i've modified the code:
 - Check pulse length in loop cycles instead of pulseIn()
 - Added temperature
 - Added checksum
