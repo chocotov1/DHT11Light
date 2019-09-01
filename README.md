@@ -10,7 +10,8 @@ After i noticed there were false readings in the first version, i discoved some 
 Tested with UNO and ATtiny85 (8 mhz)
 
 Preview sketch size with [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore) with LTO enabled, all serial output disabled:
-```Sketch uses 986 bytes (12%) of program storage space. Maximum is 8192 bytes.
+```
+Sketch uses 986 bytes (12%) of program storage space. Maximum is 8192 bytes.
 Global variables use 14 bytes (2%) of dynamic memory, leaving 498 bytes for local variables. Maximum is 512 bytes.
 ```
 ~~## Caveat: No checksum check
