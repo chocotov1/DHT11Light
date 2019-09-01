@@ -15,9 +15,6 @@ Sketch uses 986 bytes (12%) of program storage space. Maximum is 8192 bytes.
 Global variables use 14 bytes (2%) of dynamic memory, leaving 498 bytes for local variables. Maximum is 512 bytes.
 ```
 
-~~## Caveat: No checksum check
-The DHT11 output reponse contains a checksum. This sketch doesn't check the checksum.
-
 ## TODO
 At 1 mhz it almost works but some pulses are not registered. One day i'll look into timers. A interrupt based version might then also work at 1 mhz.
 
